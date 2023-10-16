@@ -18,4 +18,4 @@ Each review was summarised by [ChatGPT](https://chat.openai.com/) using the Goog
 * `yorkshire`- This is the output from ChatGPT using 'Yorkshire' as the format input.
 * `factual`- This is the output from ChatGPT using 'Factual' as the format input.
 
-A number of tests were completed on this data such as sentiment analysis to check the reviews kept the same meaning and classification of the reviews into one of the three protected characteristics (Australia, UK or US). The code used for model training and evaluation is , and the statistical tests were performed .
+A number of tests were completed on this data such as sentiment analysis to check the reviews kept the same meaning and classification of the reviews into one of the three protected characteristics (Australia, UK or US). The code used for model training and evaluation is seen in [DisneyDataModels](DisneyDataModels.ipynb), and the statistical tests were performed using the code seen in [DisneyDataMcNemarsTest](DisneyDataMcNemarsTest.ipynb).
