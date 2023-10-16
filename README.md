@@ -3,9 +3,7 @@ Code, datasets, and models for the paper "ChatGPT as a Text Summarisation Tool t
 
 This is the work for the paper submitted to LREC-Cling 2024. We generated a [dataset of Disneyland reviews](https://github.com/CharmaineBarker/ChatGPT-A-text-simplification-tool-as-an-application-for-removing-bias/blob/main/disneyReviewsSimplified.csv) which is released here, alongside the code used for model building and evaluation, as well as McNemar's Test.
 
-The sample of reviews was taken from a Kaggle dataset: [Disneyland Reviews](https://www.kaggle.com/datasets/arushchillar/disneyland-reviews)
-
-Each review was summarised by [ChatGPT](https://chat.openai.com/) using the Google Sheets extension [Coefficient](https://coefficient.io/). The dataset is released here as [DinseylandReviews](DinseylandReviews.csv), and it contains the following features:
+The sample of reviews was taken from a Kaggle dataset here [Disneyland Reviews](https://www.kaggle.com/datasets/arushchillar/disneyland-reviews). Each review was summarised by [ChatGPT](https://chat.openai.com/) using the Google Sheets extension [Coefficient](https://coefficient.io/). The dataset is released here as [DinseylandReviews](DinseylandReviews.csv), and it contains the following features:
 
 * `reviewerLocation`- The sensitive attribute which was country of origin of the reviewer. This was filtered to only have people from the either `Australia`, `United Kingdom`, or `United States`.
 * `originalReview`- The original review text which was summarised.
