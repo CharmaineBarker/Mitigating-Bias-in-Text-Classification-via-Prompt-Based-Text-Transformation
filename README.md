@@ -1,7 +1,7 @@
 # ChatGPT-as-a-Text-Summarisation-Tool-to-Remove-Bias
 Code, datasets, and models for the paper "ChatGPT as a Text Summarisation Tool to Remove Bias"
 
-This is the work for the paper submitted to LREC-Cling 2024. We generated a dataset of Dinseyland reviews summarised using different prompts that is released here, alongside the code used for model building and evaluation, as well as McNemar's Test.
+This is the work for the paper submitted to LREC-Coling 2024. We generated a dataset of Dinseyland reviews summarised using different prompts that is released here, alongside the code used for model building and evaluation, as well as McNemar's Test.
 
 The sample of reviews was taken from a Kaggle dataset here [Disneyland Reviews](https://www.kaggle.com/datasets/arushchillar/disneyland-reviews). Each review was summarised by [ChatGPT](https://chat.openai.com/) using the Google Sheets extension [Coefficient](https://coefficient.io/). The dataset is released here as [DinseylandReviews](DinseylandReviews.csv), and it contains the following features:
 
