@@ -17,3 +17,5 @@ The sample of reviews was taken from a Kaggle dataset here [Disneyland Reviews](
 * `factual`- This is the output from ChatGPT using 'Factual' as the format input.
 
 A number of tests were completed on this data such as sentiment analysis to check the reviews kept the same meaning and classification of the reviews into one of the three protected characteristics (Australia, UK or US). The code used for model training and evaluation is seen in [DisneyDataModels](DisneyDataModels.ipynb). Text was preprocessed, and five machine learning models were used- Naïve Bayes, Logistic Regression, Support Vector Classifier, Random Forest, and XGBoost. Word Importance was also assessed within this notebook. The statistical tests were performed using the code seen in [DisneyDataMcNemarsTest](DisneyDataMcNemarsTest.ipynb). Code for importing of datasets and results dictionaries has been removed for anonymity.
+
+Our Generated Dataset License: CC BY-NC-SA 4.0 DEED
