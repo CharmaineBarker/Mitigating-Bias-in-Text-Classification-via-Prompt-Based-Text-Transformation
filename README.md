@@ -16,6 +16,6 @@ The sample of reviews was taken from a Kaggle dataset here [Disneyland Reviews](
 * `englishText`- The version of the review outputted when the model was prompted with "Make this sound like it was written by an Englishman in 50 tokens or less".
 * `formalText`- The version of the review outputted when the model was prompted with "Rephrase this for a professional audience using formal language in 50 tokens or less".
 
-A number of tests were completed on this data such as sentiment analysis to check the reviews kept the same meaning and classification of the reviews by the protected characteristic. The code used for model training and evaluation is seen in [DisneyDataModels](DisneyDataModels.ipynb). Text was preprocessed, and five machine learning models were used- Naïve Bayes, Logistic Regression, Support Vector Classifier, Random Forest, and XGBoost. Word Importance was also assessed within this notebook. The statistical tests were performed using the code seen in [DisneyDataMcNemarsTest](DisneyDataMcNemarsTest.ipynb). Code for importing of datasets and results dictionaries has been removed for anonymity.
+A number of tests were completed on this data such as sentiment analysis to check the reviews kept the same meaning and classification of the reviews by the protected characteristic. The code used for model training and evaluation can be found seen in [DisneyDataModels](DisneyDataModels.ipynb). Here, users can select the column they wish to train and test on, and the model to use for training.
 
 Our Generated Dataset License: CC BY-NC-SA
