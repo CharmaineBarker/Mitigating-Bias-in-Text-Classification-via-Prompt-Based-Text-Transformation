@@ -7,7 +7,6 @@ The sample of reviews was taken from a Kaggle dataset here [Disneyland Reviews](
 
 * `reviewID`- The ID of the original review, retained from the original Disneyland dataset for reproducibility.
 * `rating`- The 1-5 star rating given by the reviewer, preserved in this dataset for evauluation of sentiment retention.
-* ``-
 * `branch`- The Disneyland branch the review was discussing.
 * `reviewerLocation`- The country of origin of the reviewer, used here as the protected attribute.
 * `rawText`- The original raw review text.
