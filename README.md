@@ -1,21 +1,22 @@
 # ChatGPT-as-a-Text-Summarisation-Tool-to-Remove-Bias
 Code, datasets, and models for the paper "ChatGPT as a Text Summarisation Tool to Remove Bias"
 
-This is the work for the paper submitted to LREC-Coling 2024. We generated a dataset of Dinseyland reviews summarised using different prompts that is released here, alongside the code used for model building and evaluation, as well as McNemar's Test.
+This is the work for the paper submitted to RANLP 2025. We generated a dataset of Dinseyland reviews simplified using different prompts, and that is released here. The code used for model building and evaluation, as well as McNemar's Test.
 
-The sample of reviews was taken from a Kaggle dataset here [Disneyland Reviews](https://www.kaggle.com/datasets/arushchillar/disneyland-reviews). Each review was summarised by [ChatGPT](https://chat.openai.com/) using the Google Sheets extension [Coefficient](https://coefficient.io/). The dataset is released here as [DinseylandReviews](DinseylandReviews.csv), and it contains the following features:
+The sample of reviews was taken from a Kaggle dataset here [Disneyland Reviews](https://www.kaggle.com/datasets/arushchillar/disneyland-reviews). Each review was summarised by [ChatGPT](https://chat.openai.com/) using the 3.5-turbo model. The dataset is released here as [DinseylandReviews](DinseylandReviews.csv), and it contains the following features:
 
-* `reviewerLocation`- The sensitive attribute which was country of origin of the reviewer. This was filtered to only have people from the either `Australia`, `United Kingdom`, or `United States`.
-* `originalReview`- The original review text which was summarised.
-* `summary`- The default summary output, where ChatGPT generated a summary of reasonable length
-* `formal`- This is the output from ChatGPT using 'Formal' as the format input.
-* `informal`- This is the output from ChatGPT using 'Informal' as the format input.
-* `americanEnglish`- This is the output from ChatGPT using 'American English' as the format input.
-* `britishEnglish`- This is the output from ChatGPT using 'British English' as the format input.
-* `australianEnglish`- This is the output from ChatGPT using 'Australian English' as the format input.
-* `yorkshire`- This is the output from ChatGPT using 'Yorkshire' as the format input.
-* `factual`- This is the output from ChatGPT using 'Factual' as the format input.
+* `reviewID`- The ID of the original review, retained from the original Disneyland dataset for reproducibility.
+* `rating`- The 1-5 star rating given by the reviewer, preserved in this dataset for evauluation of sentiment retention.
+* ``-
+* `branch`- The Disneyland branch the review was discussing.
+* `reviewerLocation`- The country of origin of the reviewer, used here as the protected attribute.
+* `rawText`- The original raw review text.
+* `nerText`- The review after being processed by NER-based anonymisation
+* `simpleText`- The version of the review outputted when the model was prompted with "Simplify this text in 50 tokens or less".
+* `removedText`- The version of the review outputted when the model was prompted with "Remove author nationality cues and use globally neutral English without idioms or slang in 50 tokens or less".
+* `englishText`- The version of the review outputted when the model was prompted with "Make this sound like it was written by an Englishman in 50 tokens or less".
+* `formalText`- The version of the review outputted when the model was prompted with "Rephrase this for a professional audience using formal language in 50 tokens or less".
 
-A number of tests were completed on this data such as sentiment analysis to check the reviews kept the same meaning and classification of the reviews into one of the three protected characteristics (Australia, UK or US). The code used for model training and evaluation is seen in [DisneyDataModels](DisneyDataModels.ipynb). Text was preprocessed, and five machine learning models were used- Naïve Bayes, Logistic Regression, Support Vector Classifier, Random Forest, and XGBoost. Word Importance was also assessed within this notebook. The statistical tests were performed using the code seen in [DisneyDataMcNemarsTest](DisneyDataMcNemarsTest.ipynb). Code for importing of datasets and results dictionaries has been removed for anonymity.
+A number of tests were completed on this data such as sentiment analysis to check the reviews kept the same meaning and classification of the reviews by the protected characteristic. The code used for model training and evaluation is seen in [DisneyDataModels](DisneyDataModels.ipynb). Text was preprocessed, and five machine learning models were used- Naïve Bayes, Logistic Regression, Support Vector Classifier, Random Forest, and XGBoost. Word Importance was also assessed within this notebook. The statistical tests were performed using the code seen in [DisneyDataMcNemarsTest](DisneyDataMcNemarsTest.ipynb). Code for importing of datasets and results dictionaries has been removed for anonymity.
 
 Our Generated Dataset License: CC BY-NC-SA
