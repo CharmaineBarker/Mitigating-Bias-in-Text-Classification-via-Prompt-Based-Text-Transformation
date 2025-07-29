@@ -1,5 +1,5 @@
-# ChatGPT-as-a-Text-Summarisation-Tool-to-Remove-Bias
-Code, datasets, and models for the paper "ChatGPT as a Text Summarisation Tool to Remove Bias"
+# Mitigating Bias in Text Classification via Prompt-Based Text Transformation
+Code, datasets, and models for the paper "Mitigating Bias in Text Classification via Prompt-Based Text Transformation"
 
 This is the work for the paper submitted to RANLP 2025. We generated a dataset of Dinseyland reviews simplified using different prompts, and that is released here. The code used for model building and evaluation, as well as McNemar's Test.
 
