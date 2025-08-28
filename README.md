@@ -3,7 +3,7 @@ Code, datasets, and models for the paper "Mitigating Bias in Text Classification
 
 This is the work for the paper submitted to RANLP 2025. We generated a dataset of Dinseyland reviews simplified using different prompts, and that is released here. The code used for model building and evaluation, as well as McNemar's Test.
 
-The sample of reviews was taken from a Kaggle dataset here [Disneyland Reviews](https://www.kaggle.com/datasets/arushchillar/disneyland-reviews). Each review was summarised by [ChatGPT](https://chat.openai.com/) using the 3.5-turbo model. The dataset is released here as [DinseylandReviews](DinseylandReviews.csv), and it contains the following features:
+The sample of reviews was taken from a Kaggle dataset here [Disneyland Reviews](https://www.kaggle.com/datasets/arushchillar/disneyland-reviews). Each review was summarised by [ChatGPT](https://chat.openai.com/) using the 3.5-turbo model. The dataset is released here as [DisneylandReviews](DinseylandReviews.csv), and it contains the following features:
 
 * `reviewID`- The ID of the original review, retained from the original Disneyland dataset for reproducibility.
 * `rating`- The 1-5 star rating given by the reviewer, preserved in this dataset for evauluation of sentiment retention.
